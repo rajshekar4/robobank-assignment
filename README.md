@@ -90,6 +90,10 @@ End balance calculation check. (endbalance = startbalance – mutation)
 
 <H3>Screen shots</h3>
 
+<h2> End balance calculation check.</h2> <br>
 <img src="https://github.com/rajshekar4/robobank-assignment/blob/master/documentation/end_balance.JPG"/> <br>
+
+<h2> all transaction references should be unique. displaying failure records </h2> <br>
+
 <img src="https://github.com/rajshekar4/robobank-assignment/blob/master/documentation/duplicate_records.JPG"/> <br>
 
