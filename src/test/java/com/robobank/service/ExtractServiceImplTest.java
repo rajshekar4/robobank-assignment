@@ -12,6 +12,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -22,6 +23,8 @@ import org.springframework.mock.web.MockMultipartFile;
 import com.rabobank.constants.Constants;
 import com.rabobank.exception.ServiceException;
 import com.robobank.model.Record;
+
+import net.bytebuddy.asm.Advice.Thrown;
 
 class ExtractServiceImplTest 
 {
@@ -59,6 +62,41 @@ class ExtractServiceImplTest
 		List<Record> acutalRecords = extractServiceImpl.extractStatmentFromCSV(file);
 		assertEquals(records, acutalRecords);
 		
+	}
+	
+	@Test
+	void testExtractStatmentFromCSVExcpetion() throws ServiceException 
+	{
+		
+		records = new ArrayList<Record>();
+		Record record = new Record();
+		record.setTransactionReference(112806);
+		record.setAccountNumber("NL91RABO0315273637");
+		record.setDescription("Tickets for Erik Dekker");
+		record.setStartBalance(41.63);
+		record.setMutation(12.41);
+		record.setEndBalance(54.04);
+		records.add(record);
+		Assertions.assertThrows(ServiceException.class,()->{extractServiceImpl.extractStatmentFromCSV(new File(""));});
+		
+		
+	}
+	
+	@Test
+	void testExtractStatmentFromXMLException() throws ServiceException 
+	{
+		records = new ArrayList<Record>();
+		Record record = new Record();
+		record.setTransactionReference(187997);
+		record.setAccountNumber("NL91RABO0315273637");
+		record.setDescription("Clothes for Rik King");
+		record.setStartBalance(57.6);
+		record.setMutation(-32.98);
+		record.setEndBalance(24.62);
+		records.add(record);
+		 file= new File(Constants.uploadingDir+"\\src\\test\\resources\\"+"records.xml");
+		 Assertions.assertThrows(ServiceException.class,()->{extractServiceImpl.extractStatmentFromXML(new File(""));});
+			
 	}
 
 	@Test

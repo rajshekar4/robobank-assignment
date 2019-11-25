@@ -52,12 +52,6 @@ public ExtractService extractService;
 		return new ResponseEntity<String>(ObjectToString(records),HttpStatus.OK);
 		
 	}
-	@GetMapping(value="/test123")
-	public ResponseEntity<?> processTest(@RequestBody String s)
-	
-	{
-		return new ResponseEntity<String>("test",HttpStatus.OK);
-	}
 	
 	public String ObjectToString(Object obj) {
 		String result = null;
