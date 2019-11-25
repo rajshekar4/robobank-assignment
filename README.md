@@ -74,11 +74,10 @@ Rabobank receives monthly deliveries of customer statement records. This informa
 1. Clone the project Rabobank (Spring boot project).
   git command : git clone https://github.com/rajshekar4/robobank-assignment
   
-2. Run maven command to install dependency.
-    mvn clean install (it will all the test cases), once the build is success
-3. run java command : java -jar target/rabobank-0.0.1-SNAPSHOT.jar
-4. Open any REST api testing tool (Postman client)
-5. Upload input csv/xml file in the service using postman client.
+2. Run batch (run.bat) from your terminal/command prompt 
+3. it will do mvn clean install and runs all junit unit test cases and started the application.
+4. Open any REST api testing tool (Postman client) : http://localhost:8080/api/v1/process
+5. Upload input csv/xml file in the service using postman client and select post 
 6. The input file will be validated based on two conduction mentioned in the problem statment.(validation condition mentioned in expected output section)
 Duplicate Transaction key check,
 End balance calculation check. (endbalance = startbalance – mutation)
