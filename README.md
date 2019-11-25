@@ -72,7 +72,8 @@ Rabobank receives monthly deliveries of customer statement records. This informa
 <h3>Steps to run the application:</h3>
 
 1. Clone the project Rabobank (Spring boot project).
-  git clone https://github.com/rajshekar4/robobank-assignment
+  git command : git clone https://github.com/rajshekar4/robobank-assignment
+  
 2. Run maven command to install dependency.
     mvn clean install (it will all the test cases), once the build is success
 3. run java command : java -jar target/mywebserviceapp-0.0.1-SNAPSHOT.jar
@@ -82,5 +83,8 @@ Rabobank receives monthly deliveries of customer statement records. This informa
 Duplicate Transaction key check,
 End balance calculation check. (endbalance = startbalance – mutation)
 7.Finally invalid/failure records will be sent as response of rest api.
+
+code coverage report : 
+<img src=
 
 
