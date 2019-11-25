@@ -84,7 +84,12 @@ Duplicate Transaction key check,
 End balance calculation check. (endbalance = startbalance – mutation)
 7.Finally invalid/failure records will be sent as response of rest api.
 
-code coverage report : 
+<H3>code coverage report : </h3>
+
 <img src="https://github.com/rajshekar4/robobank-assignment/blob/master/documentation/codecoverage.JPG"/>
 
+<H3>Screen shots</h3>
+
+<img src="https://github.com/rajshekar4/robobank-assignment/blob/master/documentation/end_balance.JPG"/> <br>
+<img src="https://github.com/rajshekar4/robobank-assignment/blob/master/documentation/duplicate_records.JPG"/> <br>
 
