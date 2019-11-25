@@ -1,0 +1,5 @@
+spring: 
+logging: 
+  level: 
+     com.robobank: DEBUG
+
