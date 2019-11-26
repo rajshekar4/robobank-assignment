@@ -76,7 +76,7 @@ Rabobank receives monthly deliveries of customer statement records. This informa
   
 2. Run batch (run.bat) from your terminal/command prompt 
 3. it will do mvn clean install and runs all junit unit test cases and started the application.
-4. Open any REST api testing tool (Postman client) : http://localhost:8080/api/v1/process
+4. Open any REST api testing tool (Postman app tool client/ postman chrome plugin(it will not work because csv/xml format) : http://localhost:8080/api/v1/process
 5. Upload input csv/xml file in the service using postman client and select post 
 6. The input file will be validated based on two conduction mentioned in the problem statment.(validation condition mentioned in expected output section)
 Duplicate Transaction key check,
