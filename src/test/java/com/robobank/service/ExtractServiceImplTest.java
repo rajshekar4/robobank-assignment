@@ -82,7 +82,8 @@ class ExtractServiceImplTest
 		
 	}
 	
-	@Test
+        
+	/*@Test
 	void testExtractStatmentFromXMLException() throws ServiceException 
 	{
 		records = new ArrayList<Record>();
@@ -97,7 +98,7 @@ class ExtractServiceImplTest
 		 file= new File(Constants.uploadingDir+"\\src\\test\\resources\\"+"records.xml");
 		 Assertions.assertThrows(ServiceException.class,()->{extractServiceImpl.extractStatmentFromXML(new File(""));});
 			
-	}
+	}*/
 
 	@Test
 	void testExtractStatmentFromXML() throws ServiceException 
