@@ -6,7 +6,7 @@ import java.util.Map;
 
 import org.springframework.web.multipart.MultipartFile;
 
-import com.rabobank.exception.ServiceException;
+import com.robobank.exception.ServiceException;
 import com.robobank.model.Record;
 
 public interface ExtractService {

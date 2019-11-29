@@ -20,8 +20,8 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.springframework.mock.web.MockMultipartFile;
 
-import com.rabobank.constants.Constants;
-import com.rabobank.exception.ServiceException;
+import com.robobank.constants.Constants;
+import com.robobank.exception.ServiceException;
 import com.robobank.model.Record;
 
 import net.bytebuddy.asm.Advice.Thrown;

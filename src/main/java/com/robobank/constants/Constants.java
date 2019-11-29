@@ -1,4 +1,4 @@
-package com.rabobank.constants;
+package com.robobank.constants;
 
 public class Constants {
 	public static final String FILE_TYPE_XML = "application/xml";

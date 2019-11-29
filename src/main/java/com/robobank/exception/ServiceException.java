@@ -1,4 +1,4 @@
-package com.rabobank.exception;
+package com.robobank.exception;
 
 public class ServiceException extends Exception{
 

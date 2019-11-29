@@ -1,4 +1,4 @@
-package com.rabobank.controller;
+package com.robobank.controller;
 
 import java.util.Map;
 
@@ -16,7 +16,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.rabobank.exception.ServiceException;
+import com.robobank.exception.ServiceException;
 import com.robobank.service.ExtractService;
 
 
